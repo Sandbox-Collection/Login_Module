@@ -60,3 +60,5 @@ fastlane/report.xml
 fastlane/Preview.html
 fastlane/screenshots/**/*.png
 fastlane/test_output
+LoginModule/SupportFiles/XCConfigs/Base.xcconfig
+LoginModule/.package.resolved

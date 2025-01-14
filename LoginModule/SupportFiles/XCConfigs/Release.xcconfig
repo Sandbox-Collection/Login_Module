@@ -1,0 +1,20 @@
+#include "Base.xcconfig"
+
+APP_VERSION                     = $(APP_VERSION)
+BUILD_NUMBER                    = $(BUILD_NUMBER)
+
+APP_IDENTIFIER                  = $(RELEASE_IDENTIFIER)
+APP_BUNDLE_DISPLAYNAME          = $(RELEASE_BUNDLE_DISPLAYNAME)
+APP_BUILD_DEFINITION            = $(RELEASE_BUILD_DEFINITION)
+APPLINK_DOMAIN                  = $(RELEASE_APPLINK_DOMAIN)
+
+CODE_SIGN_IDENTITY              = Apple Distribution
+
+DEVELOPMENT_TEAM                = $(RELEASE_IDENTIFIER_PREFIX)
+
+GCC_PREPROCESSOR_DEFINITIONS    = $(inherited) $(APP_BUILD_DEFINITION)
+OTHER_SWIFT_FLAGS               = $(inherited) -D$(APP_BUILD_DEFINITION)
+
+CODE_SIGN_STYLE                 = Automatic
+
+KAKAO_APP_KEY                   = $(RELEASE_KAKAO_APP_KEY)
